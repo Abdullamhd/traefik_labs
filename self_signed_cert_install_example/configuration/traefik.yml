@@ -1,0 +1,12 @@
+tls:
+  certificates:
+    - certFile: "/configuration/server.cert"
+      keyFile: "/configuration/server.key"
+      stores:
+        - default
+# Specifying the default certificate
+  stores:
+    default:
+      defaultCertificate:
+        certFile: "/configuration/server.cert"
+        keyFile: "/configuration/server.key"
