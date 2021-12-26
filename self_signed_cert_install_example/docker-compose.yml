@@ -13,7 +13,7 @@ services:
       - "443:443" #Docker sends requests on port 443 to Traefik on port 443
     volumes: 
       - "/var/run/docker.sock:/var/run/docker.sock:ro"
-      - "/home/abdullah/personal/github-projects/traefik_labs/self_signed_cert_install/configuration:/configuration"
+      - "/home/abdullah/personal/github-projects/traefik_labs/self_signed_cert_install_example/configuration:/configuration"
   
   my-app:
     image: containous/whoami:v1.3.0
